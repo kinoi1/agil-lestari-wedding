@@ -1,90 +1,105 @@
 <template>
-  <div class="book">
-    <div class="book__spine"></div>
+  <div class="wedding-container">
+    <div class="book">
+      <div class="book__spine"></div>
 
-    <!-- Cover Depan -->
-    <div
-      class="page book__page book__cover book__cover--front"
-      :style="{ '--page-index': 1 }"
-    >
-      <div class="page__half page__half--front"></div>
-      <div class="page__half page__half--back">
-        <div class="book__insert"></div>
-      </div>
-    </div>
-
-    <!-- Halaman 1 -->
-    <div class="page book__page" :style="{ '--page-index': 2 }">
-      <div class="page__half page__half--front">
-        <div class="page-content">
-          Hai this is page 1
-        </div>
-        <div class="page__number">1</div>
-      </div>
-      <div class="page__half page__half--back">
-        <div class="page-content">
-          <div class="container-frame">
-            tes
+      <!-- Cover Depan -->
+      <div
+        class="page book__page book__cover book__cover--front"
+        :style="{ '--page-index': 1 }"
+      >
+        <div class="page__half page__half--front">
+          <div class="page-content font-alex relative h-full">
+            <div class="flex flex-col">
+              <span class="text-[4rem]">Wedding</span>
+              <span class="flex flex-col">
+                <span class="text-[2.5rem]">Agil</span>
+                <span class="text-xl">&</span>
+                <span class="text-[2.5rem]">Lestari</span>
+              </span>
+            </div>
+            <div class="absolute left-[50%] transform-middle w-[350px]">
+              <img src="/img/love.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="page__number">2</div>
+        <div class="page__half page__half--back">
+          <div class="book__insert"></div>
+        </div>
       </div>
-    </div>
 
-    <!-- Halaman 2 -->
-    <div class="page book__page" :style="{ '--page-index': 3 }">
-      <div class="page__half page__half--front">
-        <div class="page-content"></div>
-        <div class="page__number">3</div>
+      <!-- Halaman 1 -->
+      <div class="page book__page" :style="{ '--page-index': 2 }">
+        <div class="page__half page__half--front">
+          <div class="page-content">
+            Hai this is page 1
+          </div>
+          <div class="page__number">1</div>
+        </div>
+        <div class="page__half page__half--back">
+          <div class="page-content">
+            <div class="container-frame">
+              tes
+            </div>
+          </div>
+          <div class="page__number">2</div>
+        </div>
       </div>
-      <div class="page__half page__half--back">
-        <div class="page-content"></div>
-        <div class="page__number">4</div>
-      </div>
-    </div>
 
-    <div class="page book__page" :style="{ '--page-index': 4 }">
-      <div class="page__half page__half--front">
-        <div class="page-content"></div>
-        <div class="page__number">5</div>
+      <!-- Halaman 2 -->
+      <div class="page book__page" :style="{ '--page-index': 3 }">
+        <div class="page__half page__half--front">
+          <div class="page-content"></div>
+          <div class="page__number">3</div>
+        </div>
+        <div class="page__half page__half--back">
+          <div class="page-content"></div>
+          <div class="page__number">4</div>
+        </div>
       </div>
-      <div class="page__half page__half--back">
-        <div class="page-content"></div>
-        <div class="page__number">6</div>
-      </div>
-    </div>
 
-    <div class="page book__page" :style="{ '--page-index': 6 }">
-      <div class="page__half page__half--front">
-        <div class="page-content"></div>
-        <div class="page__number">7</div>
+      <div class="page book__page" :style="{ '--page-index': 4 }">
+        <div class="page__half page__half--front">
+          <div class="page-content"></div>
+          <div class="page__number">5</div>
+        </div>
+        <div class="page__half page__half--back">
+          <div class="page-content"></div>
+          <div class="page__number">6</div>
+        </div>
       </div>
-      <div class="page__half page__half--back">
-        <div class="page-content"></div>
-        <div class="page__number">8</div>
-      </div>
-    </div>
 
-    <div class="page book__page" :style="{ '--page-index': 6 }">
-      <div class="page__half page__half--front">
-        <div class="page-content"></div>
-        <div class="page__number">9</div>
+      <div class="page book__page" :style="{ '--page-index': 6 }">
+        <div class="page__half page__half--front">
+          <div class="page-content"></div>
+          <div class="page__number">7</div>
+        </div>
+        <div class="page__half page__half--back">
+          <div class="page-content"></div>
+          <div class="page__number">8</div>
+        </div>
       </div>
-      <div class="page__half page__half--back">
-        <div class="page-content"></div>
-        <div class="page__number">10</div>
-      </div>
-    </div>
-    <!-- ... Lanjutkan sesuai HTML aslinya ... -->
 
-    <!-- Cover Belakang -->
-    <div
-      class="page book__page book__cover book__cover--back"
-      :style="{ '--page-index': 7 }"
-    >
-      <div class="page__half page__half--front"></div>
-      <div class="page__half page__half--back"></div>
-      
+      <div class="page book__page" :style="{ '--page-index': 6 }">
+        <div class="page__half page__half--front">
+          <div class="page-content"></div>
+          <div class="page__number">9</div>
+        </div>
+        <div class="page__half page__half--back">
+          <div class="page-content"></div>
+          <div class="page__number">10</div>
+        </div>
+      </div>
+      <!-- ... Lanjutkan sesuai HTML aslinya ... -->
+
+      <!-- Cover Belakang -->
+      <div
+        class="page book__page book__cover book__cover--back"
+        :style="{ '--page-index': 7 }"
+      >
+        <div class="page__half page__half--front"></div>
+        <div class="page__half page__half--back"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -104,14 +119,16 @@ onMounted(() => {
       end: () => window.innerHeight * 0.25,
       markers: false,
     },
-    scale: 1.2,
-    x: "50%",
+    scale: 1,
+    x: "0",
     duration: 0.5,
   });
 
   const PAGES = Array.from(document.querySelectorAll(".book__page"));
+  console.log(PAGES.length);
   const TOTAL_PAGES = 7;
-
+  console.log(document.documentElement.scrollHeight);
+  console.log((0 + 20) * (window.innerHeight * 0.25));
   // Set posisi awal tiap halaman
   PAGES.forEach((page, index) => {
     gsap.set(page, { z: -index });
@@ -134,7 +151,7 @@ onMounted(() => {
     // Efek zoom ke buku (opsional hanya di halaman pertama)
     if (index === 0) {
       gsap.to(".book", {
-        scale: 1.5,
+        scale: 1,
         x: "0%",
         scrollTrigger: {
           start: startPos,
@@ -155,104 +172,8 @@ onMounted(() => {
     });
   });
 
-  // Audio control
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".book",
-      start: 3 * (window.innerHeight * 0.25),
-      end: (0 + 10) * (window.innerHeight * 0.25),
-      onEnter: playAudio,
-      onLeave: pauseAudio,
-      onEnterBack: resumeAudio,
-      onLeaveBack: pauseAudio,
-      markers: false,
-    },
-  });
-
-  // Fade in text
-  gsap.from("#fadeInText", {
-    opacity: 0,
-    y: "100%",
-    duration: 1,
-    scrollTrigger: {
-      trigger: "#fadeInText",
-      start: (0 + 7) * (window.innerHeight * 0.25) + " bottom",
-      end: (0 + 15) * (window.innerHeight * 0.25) + " bottom",
-      toggleActions: "play reverse play reverse",
-      markers: false,
-    },
-  });
-
-  // Sprite animation
-  const spriteSheet = {
-    width: 165,
-    height: 292,
-    total: 64,
-    cols: 12,
-    rows: 6,
-    duration: 1,
-  };
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      scrub: 0.25,
-      start: () => (0 + 12) * (window.innerHeight * 0.25),
-      end: () => (0 + 15) * (window.innerHeight * 0.25),
-      markers: false,
-    },
-  });
-
-  tl.from(".container-frame", { scale: 0.5, duration: 0.25 }, 0).to(
-    ".container-frame",
-    { scale: 0.5, duration: 0.25 },
-    0.25
-  );
-
-  for (let i = 0; i < spriteSheet.total; i++) {
-    tl.set(
-      ".frames",
-      {
-        x: (i % spriteSheet.cols) * -spriteSheet.width,
-        y: Math.floor(i / spriteSheet.cols) * -spriteSheet.height,
-      },
-      (i / (spriteSheet.total - 1)) * spriteSheet.duration
-    );
-  }
-
-  // Box animation
-  gsap.to(".box", {
-    scrollTrigger: {
-      scrub: 0.25,
-      start: () => (0 + 18) * (window.innerHeight * 0.25),
-      end: () => (0 + 20) * (window.innerHeight * 0.25),
-      markers: false,
-    },
-    duration: 2,
-    x: 300,
-    stagger: 0.2,
-  });
 });
 
-function playAudio() {
-  const audio = document.getElementById(
-    "albumAudio"
-  ) as HTMLAudioElement | null;
-  // if (audio) audio.play()
-}
-
-function pauseAudio() {
-  const audio = document.getElementById(
-    "albumAudio"
-  ) as HTMLAudioElement | null;
-  if (audio) audio.pause();
-}
-
-function resumeAudio() {
-  const audio = document.getElementById(
-    "albumAudio"
-  ) as HTMLAudioElement | null;
-  if (audio) audio.play();
-}
 </script>
 
 <style scoped>
@@ -265,7 +186,7 @@ function resumeAudio() {
   --page-scroll: 19;
   --underline: rgba(64, 64, 64, 0.4);
   --spine: #000;
-  --cover: #1a1a1a;
+  --cover: #fefcf6;
   --bg: #4d4d4d;
   --insert: #d9d9d9;
   --page: #e6e6e6;
@@ -273,9 +194,10 @@ function resumeAudio() {
 
 :global(body) {
   width: 100vw;
-  height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
-  background: var(--bg);
-  overflow-x: hidden;
+  /* height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh); */
+  height: 100vh;
+  background: url("/img/background.jpg") repeat center center / cover;
+  /* overflow-x: hidden; */
 }
 
 :global(h1) {
@@ -297,12 +219,15 @@ function resumeAudio() {
   --page-scroll: 19;
   --underline: rgba(64, 64, 64, 0.4);
   --spine: #000;
-  --cover: #1a1a1a;
+  --cover: #fefcf6;
   --bg: #4d4d4d;
   --insert: #d9d9d9;
   --page: #e6e6e6;
 }
-
+.wedding-container {
+  height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
+  overflow-x: hidden;
+}
 h1 {
   position: fixed;
   bottom: 1rem;
@@ -316,7 +241,7 @@ h1 {
 body {
   width: 100vw;
   height: calc(8 * 25vh);
-  background: var(--bg);
+  background: url("/img/background.jpg");
   overflow-x: hidden;
 }
 
@@ -372,7 +297,7 @@ body {
 }
 
 .book {
-  height: 65vmin;
+  height: 85vmin;
   position: fixed;
   width: 60vmin;
   min-width: 150px;
@@ -538,10 +463,14 @@ a,
   will-change: transform;
 }
 
-@media only screen and (max-width: 600px) {
-  .book {
-    height: 90vmin;
-    left: 57%;
-  }
+.font-alex {
+  font-family: "Alex Brush", cursive;
+}
+.text-white {
+  color: #fff;
+}
+
+.transform-middle {
+  transform: translate(-50%, -50%);
 }
 </style>

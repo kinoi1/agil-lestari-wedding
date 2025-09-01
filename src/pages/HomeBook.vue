@@ -1,7 +1,5 @@
 <template>
-  <div>
     <FlipBook />
-  </div>
 </template>
 
 <script setup lang="ts">
