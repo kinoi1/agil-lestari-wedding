@@ -14,18 +14,18 @@
               <span class="text-[4rem] leading-none mt-2">Wedding</span>
               <div class="aspect-[4/3.5] relative">
                 <img class="absolute" src="/img/love.png" alt="" />
-                <div class="p-[4.5rem] leading-none">
+                <div class="leading-none cover-name-padding">
                   <span class="flex flex-col">
-                    <span class="text-[2rem] text-start">Agil</span>
-                    <span class="text-[2rem]">&</span>
-                    <span class="text-[2rem] flex justify-end mr-2"
+                    <span class="text-start">Agil</span>
+                    <span class="">&</span>
+                    <span class="flex justify-end mr-2"
                       >Lestari</span
                     >
                   </span>
                 </div>
               </div>
               <div class="mt-[1.5rem]">
-                24 December, 2025
+                20 December, 2025
               </div>
               <div>
                 <span class="font-nourd text-xs">Inviting you :</span>
@@ -55,27 +55,27 @@
                 <img class="" src="/img/bismillah.png" alt="" />
               </div>
               <div>
-                <span class="text-[0.45rem] leading-none"
-                  >Dengan menyebut nama Allah yang maha pengasih lagi maha
-                  penyayang</span
-                >
+                <span class="font-salam font-alex leading-none"
+                  >"Dengan menyebut nama Allah yang maha pengasih lagi maha
+                  penyayang" </span>
+                
               </div>
               <div class="mt-2">
-                <span class="text-[0.45rem] leading-[1.5] block px-4">
+                <span class="basic leading-[1.5] block px-4">
                   Maha Suci Allah ‘Azza wa Jalla yang telah menciptakan
                   makhluk-Nya berpasang-pasangan. Dengan memohon Rahmat & Ridho
                   Allah Subhanahu wa Ta’ala, kami mengundang Bapak/Ibu/Saudara/i
                   untuk menghadiri Acara Pernikahan Putra-Putri kami :
                 </span>
               </div>
-              <div class="font-alex text-lg mt-2">
+              <div class="font-alex font-bride mt-2">
                 Lestari Utami Putri
               </div>
-              <div class="text-[0.45rem] mb-2">Putri Bapak Endro & Ibu Eli</div>
+              <div class="basic mb-2">Putri Bapak Endro & Ibu Eli</div>
               <div class="flex justify-center">
                 <a
                   href="https://www.instagram.com/lestariut_/"
-                  class="w-[90px] h-[20px] bg-black rounded-xl text-white text-xs"
+                  class="h-[20px] bg-black rounded-xl px-2 text-white text-xs"
                   target="_blank"
                 >
                   IG @lestariut_
@@ -84,22 +84,22 @@
               <div class="mt-4">
                 <span class="font-alex text-[2rem]">&</span>
               </div>
-              <div class="font-alex text-lg mt-4">
+              <div class="font-alex font-bride mt-4">
                 Agil Supriyanto
               </div>
-              <div class="text-[0.45rem] mb-2">
+              <div class="basic mb-2">
                 Putra Bapak Diyanto & Ibu Sumini
               </div>
               <div class="flex justify-center">
                 <a
                   href="https://www.instagram.com/agil_supriyanto/"
-                  class="w-[120px] h-[20px] bg-black rounded-xl text-white text-xs"
+                  class="h-[20px] bg-black px-2 rounded-xl text-white text-xs"
                   target="_blank"
                 >
                   IG @agil_supriyanto
                 </a>
               </div>
-              <div class="mt-4 text-[0.45rem] px-4">
+              <div class="mt-4 basic px-4">
                 Semoga Allah memberkahi pernikahan Putra-Putri kami dan
                 menjadikannya keluarga yang sakinah mawaddah warahmah
               </div>
@@ -120,7 +120,7 @@
         <div class="page__half page__half--front">
           <div class="page-content">
             <div class="flex flex-col">
-              <div class="text-[0.45rem] pt-2">
+              <div class="basic pt-2">
                 <span>Insya Allah akan dilaksanakan pada</span>
               </div>
               <div class="mt-2 text-[1.75rem]">Minggu</div>
@@ -153,11 +153,11 @@
               </div>
 
               <div class="flex flex-col mx-4 gap-2 mt-8">
-                <span class="text-[0.45rem]">
+                <span class="basic">
                   Terimakasih atas kehadirannya, mohon maaf bila ada kekurangan
                   dan kesalahan
                 </span>
-                <span class="font-alex text-xs"
+                <span class="font-alex font-salam"
                   >Wassalamualaikum warahmatullahi wabarokatuh</span
                 >
               </div>
@@ -176,7 +176,7 @@
           <div class="page-content">
             <div class="flex flex-col">
               <h2>Wedding Gift</h2>
-              <div class="text-[0.45rem] px-[10vw] mt-[1rem]">
+              <div class="basic px-[10vw] mt-[1rem]">
                 Terima kasih telah menjadi bagian dari momen bahagia kami. Jika
                 ingin berbagi kebahagiaan melalui hadiah, silakan gunakan
                 pilihan di bawah ini.
@@ -189,7 +189,7 @@
                     <span class=""
                       >1234567 - <button class="salin">Salin</button>
                     </span>
-                    <span class="text-[0.45rem]"
+                    <span class="basic"
                       >Atas nama Agil Supriyanto</span
                     >
                   </div>
@@ -244,8 +244,12 @@ import { onMounted, onBeforeUnmount } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+let xVal = "0%";
+if (window.innerWidth < 480) {
+  xVal = "-40%";
+}
 gsap.registerPlugin(ScrollTrigger);
-
+console.log(window.innerWidth);
 onMounted(() => {
   const PAGES = Array.from(document.querySelectorAll(".book__page"));
   const lastPage = PAGES.length - 1;
@@ -281,11 +285,11 @@ onMounted(() => {
     scrollTrigger: {
       scrub: 1,
       start: () => 0,
-      end: () => window.innerHeight * 0.25,
+      end: () => window.innerHeight * 0.11,
       markers: false,
     },
-    scale: 1,
-    x: "-35%",
+    scale: 0.8,
+    x: xVal,
     duration: 0.5,
   });
 
